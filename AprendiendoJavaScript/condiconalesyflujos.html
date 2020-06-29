@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Peso!!!!!!</title>
+    </head>
+    <body>
+        <h1>Tu peso en otro planeta...!!!</h1>
+        <script>
+            var usuario = prompt("Cual es tu peso? ");
+            var planeta =parseInt(prompt("Elija su planeta\n-numero 1 para marte\n-numero 2 para jupiter"));
+            var peso =parseFloat(usuario);
+            var g_tierra = 9.8;
+            var g_marte = 3.7;
+            var g_jupiter = 24.8;
+            var peso_final,peso_finalJ;
+            if (planeta==1)
+            {
+            peso_final= peso* g_marte/g_tierra;
+            peso_final=(peso_final);/*quita los decimales y redondea*/
+            document.write("Peso em marte: <strong>"+peso_final + " kilos</strong>");
+            }   
+            else if(planeta==2)
+            {
+                peso_finalJ= peso* g_jupiter/g_tierra;
+            peso_finalJ=(peso_finalJ);/*quita los decimales y redondea*/
+            document.write("Peso em jupiter: <strong>"+peso_finalJ + " kilos</strong>");
+            }
+            if(planeta != 1 & planeta!=2)
+            {
+                alert("Dee ingresar 1 ó 2 no sea maje!!!")
+            }
+        </script>
+    </body>
+</html>
